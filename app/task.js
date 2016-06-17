@@ -12,6 +12,10 @@ class Task extends Component {
     }
 
     render() {
+        let inlineStyle = {
+            color: '#ee9900'
+        };
+
         return (
             <li className="checkList-task">
                 <input
@@ -19,7 +23,10 @@ class Task extends Component {
                     defaultChecked={this.props.done}
                     onChange={this.handleChange}
                 />
-                {this.props.name}
+                <span style={inlineStyle}>
+                    {this.props.name}
+                </span>
+
                 <a href="#" className="checklist-task-remove" onClick={this.handleClick}/>
             </li>
         );

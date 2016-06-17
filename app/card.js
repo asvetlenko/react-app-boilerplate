@@ -34,8 +34,19 @@ class Card extends Component {
             headerClassName += ' card-title-is-open';
         }
 
+        let sideInlineStyle = {
+            position: 'absolute',
+            zIndex: -1,
+            top: 0,
+            bottom: 0,
+            left: 0,
+            width: 7,
+            backgroundColor: this.props.color
+        };
+
         return (
             <article className="card">
+                <div style={sideInlineStyle} />
                 <header onClick={this.toggleDetails.bind(this)}>
                     <h2 className={headerClassName}>
                         {this.props.title}

@@ -7,6 +7,7 @@ let cardsList = [
         "id": 1,
         "title": "Card one title",
         "description": "Card detailed description.",
+        "color": "#BD8D31",
         "status": "todo",
         "tasks": [
             {
@@ -30,6 +31,7 @@ let cardsList = [
         "id": 2,
         "title": "Card Two title",
         "description": "Code along with the samples in the book. The complete source can be found at [github](https://github.com/pro-react)",
+        "color": "#3A7E28",
         "status": "in-progress",
         "tasks": [
             {"id": 1, "name": "ContactList Example", "done": true},
@@ -41,6 +43,7 @@ let cardsList = [
         "id": 3,
         "title": "Card Three title",
         "description": "Card detailed description",
+        "color": "#078C2A",
         "status": "done",
         "tasks": []
     }

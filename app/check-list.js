@@ -9,13 +9,16 @@ class CheckList extends Component {
     render() {
         var tasks = this.props.tasks.map((task) => (
             <Task key={task.id}
-                       name={task.name}
-                       done={task.done}
+                  name={task.name}
+                  done={task.done}
             />
         ));
         return (
             <ul className="checkList">
                 {tasks}
+                <input type="text"
+                       className="checklist-add-task"
+                       placeholder="Type then hit Enter to add a task"/>
             </ul>
         );
     }

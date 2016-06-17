@@ -3,6 +3,7 @@
         "id": 1,
         "title": "Card one title",
         "description": "Card detailed description.",
+        "color": "#BD8D31",
         "status": "todo",
         "tasks": [
             {
@@ -26,6 +27,7 @@
         "id": 2,
         "title": "Card Two title",
         "description": "Card detailed description",
+        "color": "#3A7E28",
         "status": "in-progress",
         "tasks": []
     },

@@ -1,11 +1,15 @@
 import React, {Component} from 'react';
 import List from './list';
+import Search from './search';
 import jquery from 'jquery';
 
 class KanbanBoard extends Component {
     constructor(props) {
         super(props);
-        this.state = {cards: []};
+        this.state = {
+            cards: [],
+            searchTerm:'React js'
+        };
     }
 
     componentDidMount () {
@@ -42,6 +46,7 @@ class KanbanBoard extends Component {
 
         return (
             <main className="app">
+                {Search}
                 {listItems}
             </main>
         );
