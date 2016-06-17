@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import List from './list';
-import Search from './search';
+import SearchForm from './SearchForm';
 import jquery from 'jquery';
 
 class KanbanBoard extends Component {
@@ -46,7 +46,7 @@ class KanbanBoard extends Component {
 
         return (
             <main className="app">
-                {Search}
+                <SearchForm />
                 {listItems}
             </main>
         );

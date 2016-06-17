@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-class Search extends Component {
+class SearchForm extends Component {
     constructor(props) {
         super(props);
     }
@@ -13,6 +13,7 @@ class Search extends Component {
 
     render() {
         return (
+            <div>Search Form:
             <form onSubmit={this.handleSubmit.bind(this)}>
                 <label className="form-group">
                     Name:
@@ -24,8 +25,9 @@ class Search extends Component {
                 </label>
                 <button type="submit">Submit</button>
             </form>
+                </div>
         );
     }
 }
 
-export default Search;
+export default SearchForm;
