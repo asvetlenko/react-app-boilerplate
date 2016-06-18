@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import CheckList from './check-list';
+import CheckList from './CheckList';
 import marked from 'marked';
 
 class Card extends Component {
@@ -46,7 +46,7 @@ class Card extends Component {
 
         return (
             <article className="card">
-                <div style={sideInlineStyle} />
+                <div style={sideInlineStyle}/>
                 <header onClick={this.toggleDetails.bind(this)}>
                     <h2 className={headerClassName}>
                         {this.props.title}
