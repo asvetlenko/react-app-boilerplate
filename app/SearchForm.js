@@ -5,27 +5,28 @@ class SearchForm extends Component {
         super(props);
     }
 
-    handleSubmit(event){
+    handleSubmit(event) {
         console.log('Submitted values area. User name: ', event.target.userName.value,
             '; User Email: ', event.target.email.value);
+        this.refs.nameInput.focus();
         event.preventDefault();
     }
 
     render() {
         return (
             <div>Search Form:
-            <form onSubmit={this.handleSubmit.bind(this)}>
-                <label className="form-group">
-                    Name:
-                    <input name="userName" type="text"/>
-                </label>
-                <label className="form-group">
-                    Name:
-                    <input name="email" type="email"/>
-                </label>
-                <button type="submit">Submit</button>
-            </form>
-                </div>
+                <form onSubmit={this.handleSubmit.bind(this)}>
+                    <label className="form-group">
+                        Name:
+                        <input name="userName" type="text" ref="nameInput"/>
+                    </label>
+                    <label className="form-group">
+                        Name:
+                        <input name="email" type="email"/>
+                    </label>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
         );
     }
 }

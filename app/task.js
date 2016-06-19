@@ -17,7 +17,7 @@ class Task extends Component {
         };
 
         return (
-            <li className="checkList-task">
+            <li className="checkList-task" key={this.props.id}>
                 <input
                     type="checkbox"
                     defaultChecked={this.props.done}
